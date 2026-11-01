@@ -1,0 +1,13 @@
+## Build output
+**/bin/
+**/obj/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Local tooling
+.idea/
+*.userosscache
+*.sln.docstates

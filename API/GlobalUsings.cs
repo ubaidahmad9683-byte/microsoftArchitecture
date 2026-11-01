@@ -1,0 +1,9 @@
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using MyProject.Business;
+global using MyProject.Business.Interfaces;
+global using MyProject.Business.Models;
+global using MyProject.DataAccess;
+global using MyProject.DataAccess.Enums;
+global using MyProject.Repository;
+global using MyProject.Repository.Interfaces;

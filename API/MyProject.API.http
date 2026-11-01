@@ -1,0 +1,44 @@
+@MyProject.API_HostAddress = http://localhost:5198
+
+### Add
+POST {{MyProject.API_HostAddress}}/api/items
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Keyboard",
+  "description": "Mechanical keyboard",
+  "price": 79.99,
+  "itemState": 1
+}
+
+### Add or edit (id 0 inserts; positive id updates)
+POST {{MyProject.API_HostAddress}}/api/items
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "Mouse",
+  "description": "Wireless mouse",
+  "price": 39.50,
+  "itemState": 2
+}
+
+### Delete
+POST {{MyProject.API_HostAddress}}/api/items
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "",
+  "price": 0,
+  "itemState": 3
+}
+
+### Get all
+GET {{MyProject.API_HostAddress}}/api/items
+Accept: application/json
+
+### Get by ID
+GET {{MyProject.API_HostAddress}}/api/items/1
+Accept: application/json
